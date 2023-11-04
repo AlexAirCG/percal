@@ -1,0 +1,166 @@
+// zero ========================================================
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*::before,
+*::after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+// ==============================================================
+
+// font =========================================================
+//&display=swap - добавить при подключении через плагин
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap");
+//===============================================================
+
+body {
+	height: 100vh;
+	background: linear-gradient(#fbc55f, #fe9901);
+	font-family: "Poppins", sans-serif;
+}
+
+.container {
+	background-color: #242738;
+	padding: 4em 2em;
+	width: min(90%, 500px);
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	border-radius: 0.8em;
+	color: #d0d0d0;
+}
+
+h1 {
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 3em;
+}
+
+.number {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 10px;
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+
+input {
+	font-size: 1em;
+	background-color: #3d4359;
+	padding: 0.5em;
+	width: 100%;
+	border-radius: 0.3em;
+	color: #ffffff;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+	-webkit-appearance: textfield;
+	appearance: textfield;
+}
+ 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	display: none;
+}
+
+button {
+	background-color: #fbc55f;
+	padding: 1em 3em;
+	border-radius: 0.3em;
+	margin-top: 1em;
+}
+
+#result {
+	margin-top: 2em;
+	font-size: 1.2em;
+	color: #ffffff;
+	& span {
+		color: #fbc55f;
+		font-size: 30px;
+	}
+}
+
