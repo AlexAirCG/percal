@@ -155,12 +155,14 @@ button {
 }
 
 #result {
-	margin-top: 2em;
+	margin-top: 1em;
 	font-size: 1.2em;
 	color: #ffffff;
-	& span {
+
+	.sum {
 		color: #fbc55f;
 		font-size: 30px;
+		margin-top: 0.5em;
 	}
 }
 

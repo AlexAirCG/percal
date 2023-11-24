@@ -8,7 +8,7 @@ calculateBtn.addEventListener('click', () => {
 
 	if (!isNaN(xValue) && !isNaN(yValue)) {
 		result.value = ((xValue * yValue) / 100).toFixed(2);
-		result.innerHTML = `${xValue}% of ${yValue} is <span>${result.value}</span>`;
+		result.innerHTML = `${xValue}% of ${yValue} is <div class="sum">${result.value}</div>`;
 	} else {
 		result.innerHTML = "Inputs cannot be empty!";
 	}
