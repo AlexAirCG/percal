@@ -7,8 +7,8 @@ calculateBtn.addEventListener('click', () => {
 	let yValue = parseFloat(document.getElementById("Y").value);
 
 	if (!isNaN(xValue) && !isNaN(yValue)) {
-		Z.value = ((xValue * yValue) / 100).toFixed(2);
-		result.innerHTML = `${xValue}% of ${yValue} is <span>${Z.value}</span>`;
+		result.value = ((xValue * yValue) / 100).toFixed(2);
+		result.innerHTML = `${xValue}% of ${yValue} is <span>${result.value}</span>`;
 	} else {
 		result.innerHTML = "Inputs cannot be empty!";
 	}
